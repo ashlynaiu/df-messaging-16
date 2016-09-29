@@ -19,6 +19,15 @@
 .imageWrapper--standard
 	@extend %imageWrapper
 	z-index: 300
+	transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s
+
+.imageWrapper--standard.ng-enter,
+.imageWrapper--standard.ng-leave.ng-leave-active
+	opacity: 0
+
+.imageWrapper--standard.ng-leave,
+.imageWrapper--standard.ng-enter.ng-enter-active
+	opacity: 1
 
 /////////////////////
 /////Animations/////

@@ -16,5 +16,4 @@ angular.module('iphoneTemplate')
 			}
 			$scope.imageStates.push(newVal);
 		}
-		console.log($scope.imageStates);
 	});
