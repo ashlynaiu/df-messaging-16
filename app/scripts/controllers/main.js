@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('iphoneTemplate')
+angular.module('DF16Messaging')
 	.controller('MainCtrl', function ($scope, $state, $timeout) {
 		$scope.$state = $state;
 		$scope.appLoad = false;

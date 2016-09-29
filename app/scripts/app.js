@@ -2,16 +2,15 @@
 
 /**
  * @ngdoc overview
- * @name iphoneTemplate
+ * @name DF16Messaging
  * @description
- * # iphoneTemplate
+ * # DF16Messaging
  *
  * Main module of the application.
  */
 
-//TO DO Transitions between states
 angular
-  .module('iphoneTemplate', [
+  .module('DF16Messaging', [
     'ngAnimate',
     'ngSanitize',
     'ngTouch',

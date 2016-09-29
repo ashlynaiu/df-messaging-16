@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('iphoneTemplate')
+angular.module('DF16Messaging')
 	.controller('FrameCtrl', function ($scope, $state) {
 		$scope.$state = $state;
 		//create image states
