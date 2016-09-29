@@ -1,0 +1,50 @@
+/////////////////////////////
+/////Main Frame Classes/////
+///////////////////////////
+%imageWrapper
+	@extend %inner-frame-dimensions
+	position: absolute
+	transition: $standard-animate
+	top: 0
+	right: 0
+
+.imageWrapper--one
+	@extend %imageWrapper
+	z-index: 100
+
+.imageWrapper--two
+	@extend %imageWrapper
+	z-index: 200
+
+.imageWrapper--standard
+	@extend %imageWrapper
+	z-index: 300
+
+/////////////////////
+/////Animations/////
+///////////////////
+.slideRightHide
+	right: calc(#{$innerFrameWidth} + 50px)
+
+.slideRightShow
+	right: 0
+
+.slideLeftHide
+	left: calc(#{$innerFrameWidth} + 50px)
+
+.slideLeftShow
+	right: 0
+
+.fadeShow
+	opacity: 1
+
+.fadeHide
+	opacity: 0
+
+.appFadeShow
+	opacity: 1
+	@include transform(scale(1))
+
+.appFadeHide
+	opacity: 0
+	@include transform(scale(1.1))

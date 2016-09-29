@@ -1,0 +1,35 @@
+////////////////////////////////////
+/////Main Mobile Frame Classes/////
+//////////////////////////////////
+$innerFrameWidth: 389px
+$innerFrameHeight: 690px
+
+%inner-frame-dimensions
+	width: $innerFrameWidth
+	height: 690px
+
+.mobile-frame
+	background: $frame-color
+	height: 100%
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 40px 0
+
+.mobileContainer
+	width: 465px
+	height: 923px
+	overflow-x: scroll
+	position: relative
+	background-image: url('/images/iphone-outline.png')
+	background-repeat: no-repeat
+
+.mobileContainer-inner
+	@extend %inner-frame-dimensions
+	background: white
+	position: absolute
+	top: 119px
+	right: 40px
+	border-radius: 3px
+	overflow: hidden
